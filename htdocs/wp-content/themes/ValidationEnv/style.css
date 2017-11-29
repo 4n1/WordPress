@@ -1,0 +1,200 @@
+/*
+Theme Name: 検証環境用CSS
+Theme URI: https://www.cac.co.jp/
+Author: CAC
+Author URI: https://www.cac.co.jp/
+Description: 検証用環境のCSS
+Version: 1.0
+License: CAC
+License URI: https://www.cac.co.jp/
+Tags: ValidationEnv
+*/
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   color: #666666;
+   font-size: 14px;
+   font-family: "ＭＳ Ｐゴシック",sans-serif;
+   line-height: 160%;
+   text-align: center;
+   margin: 20px 0px;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+   font-size: 14px;
+   font-weight: normal;
+}
+
+a:link {
+   color: #f7bd6d;
+}
+a:visited {
+   color: #f7bd6d;
+}
+a:active {
+   color: #efdb75;
+}
+a:hover {
+   color: #efdb75;
+}
+
+/* --- container --- */
+
+#container {
+   text-align: left;
+   margin: 0px auto;
+   width: 800px;
+}
+
+/* --- header --- */
+
+#header {
+   margin: 0px auto;
+   padding: 20px;
+   width: 760px;
+   border: 1px solid #aaaaaa;
+}
+
+#header h1 {
+   font-size: 15px;
+   font-weight: bold;
+}
+
+/* --- contents --- */
+
+#contents {
+   margin-bottom: 20px;
+   width: 580px;
+   float: left;
+}
+
+/* --- entry --- */
+
+.entry {
+   margin-top: 20px;
+   padding: 10px 15px;
+   border: 1px solid #aaaaaa;
+}
+
+.entry_main {
+   margin: 15px 5px;
+}
+
+/* --- navi --- */
+
+.navi {
+   text-align: center;
+   margin: 15px 0px;
+}
+
+/* --- side --- */
+
+#side {
+   margin: 0px 0px 20px 20px;
+   width: 200px;
+   float: right;
+}
+
+#side li {
+    list-style: none;
+}
+
+.widget {
+   margin-top: 20px;
+   padding: 10px 15px;
+   border: 1px solid #aaaaaa;
+}
+
+.widgettitle {
+   text-decoration: underline;
+   margin-bottom: 10px;
+}
+
+/* calendar */
+
+#wp-calendar {
+   width: 100%;
+}
+
+#wp-calendar #next {
+   text-align: right;
+   padding-right: 25px;
+}
+
+/* --- footer --- */
+
+#footer {
+   margin: 0px auto;
+   padding: 20px;
+   width: 760px;
+   clear: both;
+   border: 1px solid #aaaaaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ヘッダナビメニュー */
+.header-nav ul {
+margin: 0; /*余白はゼロ*/
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+/*liつまり各項目のスタイル*/
+.header-nav li a { /*li=リスト項目、a=リンクの意味*/
+color: #fff;  /*文字の色*/
+font-weight:bold; /*太字*/
+line-height: 25px; /*行の高さ*/
+font-size: 16px; /*文字の大きさ*/
+padding: 4px 10px; /*文字周りの余白*/
+text-align: center; /*文字は中央揃え*/
+display: block; /*文字周辺の余白含めたblock全体にリンクが付与される*/
+background-color: #00c300; /*blockの背景色*/
+border-left: 2px solid #fff ; /*blockの左端に線引く*/
+border-right: 2px solid #fff ; /*blockの右端に線引く*/
+} 
+
+/*リンクの上にカーソルが乗ってるときのスタイル*/
+.header-nav li a:hover,
+.header-nav li a:focus {
+color: #e6e6e6; /*文字の色*/
+opacity: 0.85; /*全体の透明度85%*/
+}
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current_page_item > a,
+.main-navigation .current_page_ancestor > a {
+color: #fff; /*文字の色*/
+background-color: #55acee; /*背景色*/
+}
+
+/*メニューを均等に並べる*/
+@media screen and (min-width: 960px) {
+.header-nav ul.nav-menu {
+display: table !important;
+table-layout: fixed;
+text-align: center;
+width: 100%;
+}
+.header-nav li {
+display: table-cell;
+vertical-align: middle;
+}
+}
