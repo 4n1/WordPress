@@ -13,29 +13,6 @@
 </ul>
 </li>
 
-
-<li class="widget">
-<h2>最近の記事</h2>
-<ul>
-<?php wp_get_archives('type=postbypost&limit=5'); ?>
-</ul>
-</li>
-
-
-<li class="widget">
-<h2>月別アーカイブ</h2>
-<ul>
-<?php wp_get_archives('show_post_count=1'); ?>
-</ul>
-</li>
-
-
-<li class="widget">
-<h2>カレンダー</h2>
-<?php get_calendar(); ?>
-</li>
-
-
 <li class="widget">
 <h2>キーワード</h2>
 <?php wp_tag_cloud('orderby=count&number=30'); ?>

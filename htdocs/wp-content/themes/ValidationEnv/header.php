@@ -9,16 +9,15 @@
 </head>
 
 <body>
-<header>
-<?php get_template_part('navi'); ?>
+    <header>
+        <?php get_template_part('navi'); ?>
 
-<!-- カスタムのナビゲーションメニューを表示させる。 -->
-<?php wp_nav_menu(array('container' => 'nav', 'theme_location' => 'headnav')); ?>
+        <div id="header">
+            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1>
+            <p><?php bloginfo('description'); ?></p>
+        </div>
 
-
-    <div id="header">
-        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1>
-        <p><?php bloginfo('description'); ?></p>
-    </div>
-</header>
-<div id="container">
+        <!-- 全画面共通のグローバル・ナビゲーション・メニューを表示させる。 -->
+        <?php wp_nav_menu(array('container' => 'nav',
+                                'theme_location' => 'headnav')); ?>
+    </header>

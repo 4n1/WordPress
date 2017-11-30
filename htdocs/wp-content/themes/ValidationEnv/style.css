@@ -20,14 +20,15 @@ body {
    font-size: 14px;
    font-family: "ＭＳ Ｐゴシック",sans-serif;
    line-height: 160%;
-   text-align: center;
-   margin: 20px 0px;
+   margin: 20px;
 }
 
+/*
 h1 , h2 , h3 , h4 , h5 , h6 {
    font-size: 14px;
    font-weight: normal;
 }
+*/
 
 a:link {
    color: #f7bd6d;

@@ -8,6 +8,7 @@ function add_custom_navi_menus()
 {
     register_nav_menus(array(
         'headnav' => 'ヘッダナビゲーション',
+        'headnav-kenko' => 'ヘッダナビゲーション 健康ch',
         'sidebarnav' => 'サイドナビゲーション',
         'bottomnav' => 'ボトムナビゲーション',
         'footernavl' => 'フッタナビゲーション左',
